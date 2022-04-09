@@ -1,0 +1,85 @@
+@font-face {
+	font-family: "MakLight";
+	src: url("./Font/MAK.eot"); /* IE9 Compat Modes */
+	src: url("./Font/MAK.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */ url("./Font/MAK.woff") format("woff"),
+		/* Modern Browsers */ url("./Font/MAK.html") format("truetype"); /* Safari, Android, iOS */
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+
+.App {
+	width: 100%;
+}
+
+.doctor-selection {
+	width: 100%;
+}
+
+.doctor-selection h1 {
+	margin: 1rem auto;
+	margin-left: 2rem;
+	font-family: "Cardo", serif;
+}
+
+.form__answer {
+	
+	padding: 0px;
+	margin-left: 2rem;
+	box-sizing: border-box;
+	display: inline-block;
+	text-align: center;
+}
+.form__answer p {
+	margin: 0;
+	padding: 0;
+}
+
+label {
+	border: 1px solid rgba(#000000, 0.15);
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 0.25rem;
+	width: 120px;
+	cursor: pointer;
+	opacity: 0.5;
+	transition: all 0.5s ease-in-out;
+}
+
+label:hover,
+label:focus,
+label:active {
+	border: 1px solid rgba(#fafafa, 0.5);
+	outline: none;
+	border: none;
+}
+label svg {
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	/* margin-left: -19rem; */
+}
+input[type="radio"] {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+input[type="radio"]:active ~ label {
+	opacity: 1;
+}
+
+input[type="radio"]:checked ~ label {
+	opacity: 1;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	background-color: #000000;
+	color: #fafafa;
+}
+
+input[type="radio"]:checked ~ label svg g {
+	fill: #fafafa;
+}
+
+
